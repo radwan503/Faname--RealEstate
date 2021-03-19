@@ -1,0 +1,51 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    .action {
+        background: none;
+        border: 0;
+        color: #222;
+        cursor: pointer;
+        padding: 5px;
+        height: 45px;
+        width: 45px;
+        background: #f9cc41;
+        display: inline-block;
+    }
+
+    .project-sorting-section--search {
+        background: #f2f2f2;
+        padding: 3rem 0rem;
+    }
+.section--about {
+    padding: 5rem 0;
+    background-color: #262533;
+}
+    .section--portfolio {
+    padding: 5rem 0rem;
+    background-color: #f2f2f2;
+}
+    .section--service {
+    padding: 5rem 0rem;
+   
+}
+    .section--project-info {
+    background: #f9cc41;
+    padding: 5rem 0rem;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
