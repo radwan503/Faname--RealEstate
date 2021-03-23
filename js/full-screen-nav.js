@@ -153,7 +153,7 @@
     const menu = new Menu(document.querySelector('nav.menu'));
 
     // Preload images.
-    imagesLoaded(document.querySelector('.carousel-wrapper'), {background: true}, () => document.body.classList.remove('loading'));
+    imagesLoaded(document.querySelector('.menu-wrapper'), {background: true}, () => document.body.classList.remove('loading'));
     
     // extra stuff..
     
