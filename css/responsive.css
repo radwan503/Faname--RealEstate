@@ -20,32 +20,130 @@
         background: #f2f2f2;
         padding: 3rem 0rem;
     }
-.section--about {
-    padding: 5rem 0;
-    background-color: #262533;
-}
+
+    .section--about {
+        padding: 5rem 0;
+        background-color: #262533;
+    }
+
     .section--portfolio {
-    padding: 5rem 0rem;
-    background-color: #f2f2f2;
-}
+        padding: 5rem 0rem;
+        background-color: #f2f2f2;
+    }
+
     .section--service {
-    padding: 5rem 0rem;
-   
-}
+        padding: 5rem 0rem;
+
+    }
+
     .section--project-info {
-    background: #f9cc41;
-    padding: 5rem 0rem;
-}
+        background: #f9cc41;
+        padding: 5rem 0rem;
+    }
+
+    .service-img-item--single:before {
+        content: "";
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #f9cc41;
+        clip-path: polygon(58% 0, 65% 6%, 94% 6%, 94% 38%, 100% 43%, 100% 0);
+        left: 15px;
+        bottom: -1px;
+        transform: rotate(180deg);
+        z-index: 1;
+    }
+
+    .section--project-details-block {
+        padding: 5rem 0rem;
+        background-color: #f2f2f2;
+    }
+
+    .section--project-details-block {
+        padding: 5rem 0rem;
+        background-color: #f2f2f2;
+    }
+
+    .section--project-details {
+        padding: 5rem 0rem;
+        background-color: #262533;
+    }
+
+    .project-details--banner h1 {
+        text-align: left;
+        padding: 18rem 2rem;
+        font-size: 41px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin: 0px auto 25px;
+        color: #fff;
+    }
+
+    .list-with--img img {
+        height: 600px;
+        width: 100%;
+        right: 0;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .home-slider .carousel-caption h3 {
+        display: none;
+    }
+
+    .header--logo {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        align-self: start;
+        margin-top: -95px;
+        /* background-color: #f9cc41; */
+    }
+
+    .bolck-gallery img {
+        max-height: 150px;
+        max-width: 300px;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+
+    .home-slider .carousel-caption h3 {
+        display: block;
+    }
+
+    .header--logo {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        align-self: start;
+        margin-top: 0px;
+        /* background-color: #f9cc41; */
+    }
+
+    .bolck-gallery img {
+        max-height: 400px;
+        max-width: 400px;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
