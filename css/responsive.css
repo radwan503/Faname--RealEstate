@@ -85,6 +85,11 @@
         width: 100%;
         right: 0;
     }
+
+    .bolck-gallery img {
+        max-height: 100%;
+        max-width: 100%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

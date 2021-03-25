@@ -1457,15 +1457,35 @@ p {
     z-index: 1;
 }
 
-
-/*
-@media (max-width: 767px) {
-    .section--service .wrap-section--service .uneven-box {
-        margin-top: 0px;
-    }
+/*known more*/
+.section--known-more{
+     padding: 5rem 5rem;
+    background-color: #fff;
 }
-*/
 
+.section--known-more .badge {
+	line-height: 14px;
+}
+
+.section--known-more .badge-info {
+	background: #188ef4;
+}
+
+.section--known-more .wrap-service-26 .max-box {
+  max-width: 580px;
+}
+
+.section--known-more a {
+	text-decoration: none;
+}
+
+.section--known-more .linking {
+	color: #3e4555;
+}
+
+.section--known-more .linking:hover {
+	color: #316ce8;
+}
 /*project info*/
 .section--project-info {
     background: #f9cc41;
@@ -1484,7 +1504,12 @@ p {
     color: #262533;
 }
 
-
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 /*project--section*/
 
 .project-details--banner {
@@ -1705,9 +1730,6 @@ span.block-border {
     border: 0;
     border-radius: 0;
     border-bottom: 1px solid #ced4da;
-    
-}
-{
     
 }
 .project-booking--form .form-control::placeholder {
