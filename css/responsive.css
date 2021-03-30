@@ -148,7 +148,221 @@
         border: 1px solid #ddd;
         padding: 10px;
     }
+
+    body {
+        padding: 0;
+    }
+
+    .frame {
+        position: fixed;
+        z-index: 199;
+        top: 0;
+        left: 0;
+        padding: 1.5rem;
+    }
+
+    .header--logo {
+        padding: 0;
+        justify-content: start;
+    }
+
+    .logo-links {
+        margin: 0;
+    }
+
+    .frame a {
+        pointer-events: auto;
+    }
+
+    .menu {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+      
+        grid-template-columns: 1fr 280px 2fr;
+        grid-template-rows: 60% 40%;
+        grid-template-areas:
+            "item3 item2 item1"
+            "item4 item5 item1";
+    }
+    .menu::before{
+        left: 0;
+        right: 0;
+        content: '';
+        position: absolute;
+        opacity: 0;
+    }
+    .menu__item {
+        height: 100%;
+    }
+
+    .menu__item--1 {
+        grid-area: item1;
+    }
+
+    .menu__item--2 {
+        grid-area: item2;
+    }
+
+    .menu__item--3 {
+        grid-area: item3;
+    }
+
+    .menu__item--4 {
+        grid-area: item4;
+    }
+
+    .menu__item--5 {
+        grid-area: item5;
+    }
+
+    .menu__item--4,
+    .menu__item--5 {
+        display: block;
+    }
+
+    .menu__item-inner {
+        align-items: center;
+    }
+
+    .label {
+        display: block;
+        color: var(--color-item-alt);
+        position: absolute;
+        z-index: 1000;
+        font-size: 0.85rem;
+        font-weight: bold;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .label--topleft {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .label--vert,
+    .label--vert-mirror {
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+    }
+
+    .label--vert-mirror {
+        transform: rotate(180deg);
+    }
+
+    .label--bottomright {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .label::before {
+        content: '------------- ';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        letter-spacing: -1px;
+        margin: 0 0.75rem 0 0;
+    }
+
+    .label--vert::before,
+    .label--vert-mirror::before {
+        margin: 0.75rem 0;
+    }
+
+    .mainmenu,
+    .sidemenu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainmenu {
+        counter-reset: menuitem;
+    }
+
+    .mainmenu__item {
+        font-size: 5vw;
+        text-transform: lowercase;
+        overflow: visible;
+        margin: 0.5rem 0;
+        padding: 0 0.5rem;
+        position: relative;
+        transition: color 0.3s;
+    }
+
+    .mainmenu__item:hover {
+        color: var(--color-item-alt);
+    }
+
+    .mainmenu__item::before {
+        counter-increment: menuitem;
+        content: counters(menuitem, "", decimal-leading-zero);
+        position: absolute;
+        font-size: 0.85rem;
+        top: 25%;
+        left: -1.25rem;
+        color: var(--color-item-alt);
+    }
+
+    .mainmenu__item::after {
+        content: '';
+        width: 100%;
+        top: 58%;
+        height: 6px;
+        background: var(--color-link-hover);
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transform: scale3d(0, 1, 1);
+        transition: transform 0.3s, opacity 0.3s;
+        transform-origin: 100% 50%;
+    }
+
+    .mainmenu__item:hover::after {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+
+    .sidemenu__item {
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+        font-size: 0.85rem;
+    }
+
+    .menu__item-hoverlink {
+        font-size: 1.25rem;
+        text-transform: lowercase;
+        border-bottom: 2px solid #fff;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .menu__item-inner:hover .menu__item-hoverlink {
+        opacity: 1;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+/*
+    .menu {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        grid-template-columns: 18% 31% 51%;
+        grid-template-rows: 60% 40%;
+        grid-template-areas:
+            "item3 item2 item1"
+            "item4 item5 item1";
+    }
+*/
+}
