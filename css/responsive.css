@@ -355,8 +355,8 @@
     .home-slider .carousel-caption h3 {
         color: #262533;
         text-align: left;
-        padding: 130px 225px 130px 122px;
-        font-size: 125px;
+        padding: 130px 460px 130px 370px;
+        font-size: 95px;
         line-height: 125px;
         font-weight: 600;
         letter-spacing: 0px;
@@ -365,7 +365,7 @@
 
     .project-details--banner h1 {
         text-align: left;
-        padding: 15rem;
+        padding: 180px 426px 180px 370px;
         font-size: 135px;
         font-weight: 600;
         letter-spacing: 0px;
