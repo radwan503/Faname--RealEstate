@@ -460,9 +460,8 @@ main {
 .home-slider .carousel-caption h3 {
     color: #262533;
     text-align: left;
-    padding: 130px 225px 130px 122px;
-    font-size: 72px;
-    line-height: 85px;
+    padding: 130px 225px 0px 122px;
+    font-size: 45px;
     font-weight: 600;
     letter-spacing: 0px;
     margin: 0px auto 25px;
@@ -479,11 +478,16 @@ main {
 .home-slider .carousel-caption p {
     /*    margin-top: 40%;*/
 }
-
+.home-slider .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
 .hero__slideContent {
     position: absolute;
     width: 100%;
-    bottom: 125px;
+    /* bottom: 125px; */
     right: 0;
     transform: translateX(-50%);
     max-width: 400px;
@@ -857,7 +861,7 @@ p {
 }
 
 .about-project--short-overview:hover{
-    background: #f9cc41;
+    /* background: #f9cc41; */
     color: #262533;
 }
 
@@ -1252,6 +1256,11 @@ p {
 .section--known-more .linking:hover {
     color: #f9cc41;
 }
+
+.section--known-more .figure-caption {
+    font-size: 90%;
+    color: #222;
+}
 /*filter page*/
 /*section-floor-filter*/
 /*search box css start here*/
@@ -1367,15 +1376,15 @@ p {
 /*project--section*/
 
 .project-details--banner {
-    background-image: url("../img/bg.jpg");
+    background:linear-gradient(0deg, rgba(255, 250, 253, 0.3), rgba(255, 255, 255, 0.3)),url("../img/bg.jpg") ;
     background-size: cover;
     background-position: center;
     height: 100vh;
-    left: 0;
+    /* left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    position: relative;
+    position: relative; */
 }
 
 span.block-border::before {
@@ -1385,7 +1394,7 @@ span.block-border::before {
     bottom: 10px;
     background-color: #f9cc41;
     content: "";
-    height: 10px;
+    height: 3px;
     opacity: .8;
     width: 95%;
     margin: 0 auto;
@@ -1396,13 +1405,15 @@ span.block-border {
 }
 
 .project-details--banner h1 {
+    color: #262533;
     text-align: left;
-    padding: 15rem;
-    font-size: 90px;
+    padding: 130px 225px 130px 122px;
+    font-size: 72px;
+    line-height: 85px;
     font-weight: 600;
     letter-spacing: 0px;
     margin: 0px auto 25px;
-    color: #fff;
+    opacity: 1;
 }
 
 .section--project-details-block {
@@ -1505,7 +1516,7 @@ span.block-border {
     right: 0;
     content: '';
     top: 10px;
-    background: #ddd;
+    /* background: #ddd; */
     height: 1px;
     width: 75%;
 
@@ -1540,7 +1551,7 @@ span.block-border {
     right: 100px;
     content: '';
     top: 10px;
-    background: #ddd;
+    /* background: #ddd; */
     height: 1px;
     width: 75%;
     z-index: 22;
