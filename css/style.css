@@ -265,7 +265,7 @@ body {
     color: #57585c;
     color: var(--color-text);
     background-color: #fff;
-    //background-color: var(--color-bg);
+    /* background-color: var(--color-bg); */
     /*    overflow: hidden;*/
     padding: 6rem 0 0 0;
     scroll-behavior: smooth;
@@ -856,8 +856,7 @@ p {
     margin-bottom: .2rem;
 }
 
-.about-project--short-overview:hover,
-    {
+.about-project--short-overview:hover{
     background: #f9cc41;
     color: #262533;
 }
@@ -1861,6 +1860,8 @@ span.block-border {
     padding: 10px;
     border-radius: 3px;
     height: 470px;
+    overflow: hidden;
+    overflow-y: scroll;
 
 }
 
@@ -1984,7 +1985,7 @@ footer .first_class h3 {
 }
 
 footer {
-    background: #333;
+    background: #262533;
 }
 
 footer .newsletter input[type="text"] {
