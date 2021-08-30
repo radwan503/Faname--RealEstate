@@ -1,3 +1,20 @@
+:root{
+    --color-text: #262533;
+    --color-bg: #252525;
+    --color-link: #fff;
+    --color-link-hover: #ec0a3f;
+    --color-bg-item1: #15171b;
+    --color-bg-item2: #2c35b7;
+    --color-bg-item3: #252933;
+    --color-bg-item4: #1d2027;
+    --color-bg-item5: #0f1013;
+    --color-item-alt: #494d54;
+    --color-quote: #5b677a;
+    --color-info: #57535a;
+    --color-title: #0f0c0c;
+    --color-tagline: #e2e2e2;
+}
+
 article,
 aside,
 details,
@@ -24,11 +41,6 @@ audio:not([controls]) {
     height: 0;
 }
 
-/*
-[hidden] {
-    display: none;
-}
-*/
 
 html {
     outline: 0;
@@ -43,7 +55,7 @@ body {
 
 }
 a{
-    color: #222;
+    color: #262533;
 }
 
 a:focus {
@@ -83,7 +95,7 @@ hr {
 
 mark {
     background: #ff0;
-    color: #000;
+    color: #262533;
 }
 
 code,
@@ -96,10 +108,6 @@ samp {
 
 pre {
     white-space: pre-wrap;
-}
-
-q {
-    quotes: "\201C""\201D""\2018""\2019";
 }
 
 small {
@@ -243,30 +251,14 @@ table {
 *::after,
 *::before {
     box-sizing: border-box;
+    
 }
 
 body {
-    --color-text: #222;
-    --color-bg: #252525;
-    --color-link: #fff;
-    --color-link-hover: #f20c40;
-    --color-bg-item1: #15171b;
-    --color-bg-item2: #2c35b7;
-    --color-bg-item3: #0f1013;
-    --color-bg-item4: #1d2027;
-    --color-bg-item5: #0f1013;
-    --color-item-alt: #494d54;
-    --color-quote: #5b677a;
-    --color-info: #57535a;
-    --color-title: #e23434;
-    --color-tagline: #e2e2e2;
     font-family: 'Roboto', sans-serif;
-    /*    min-height: 100vh;*/
-    color: #57585c;
+    color: #262533;
     color: var(--color-text);
     background-color: #fff;
-    /* background-color: var(--color-bg); */
-    /*    overflow: hidden;*/
     padding: 6rem 0 0 0;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -475,9 +467,7 @@ main {
     background-color: #f9cc41;
 }
 
-.home-slider .carousel-caption p {
-    /*    margin-top: 40%;*/
-}
+
 .home-slider .carousel-inner {
     position: relative;
     width: 100%;
@@ -965,7 +955,7 @@ p {
     width: 40px;
     background: none;
     margin: auto 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: #ffc107;
 }
 
 .section--portfolio .carousel-control-prev i,
@@ -1127,7 +1117,8 @@ p {
 /*service*/
 .section--service {
     padding: 5rem 5rem;
-    background-image: url("../img/bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-color: #f9f9f9;
+    /* background-image: url("../img/bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
     background-blend-mode: overlay;
     background-attachment: fixed;
     background-position: center;
@@ -1142,13 +1133,13 @@ p {
 .section--service h5,
 .section--service h6,
 .section--service p {
-    font-family: 'Oswald', sans-serif;
-    color: #f9cc41;
+    font-family: 'Roboto', sans-serif;
+    color: #262533;
 }
 
 .section--service p {
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: #262533;
 }
 
 .section--service h6 {
@@ -1166,7 +1157,7 @@ p {
 
 
 .section--service .subtitle {
-    color: #fff;
+    color: #262533;
     line-height: 24px;
 }
 
@@ -1197,7 +1188,7 @@ p {
 }
 
 .section--service .btn-info-gradiant {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #f9cc41;
 
 }
@@ -1230,7 +1221,7 @@ p {
 /*known more*/
 .section--known-more {
     padding: 5rem 5rem;
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 
 .section--known-more .badge {
@@ -1265,7 +1256,7 @@ p {
 /*section-floor-filter*/
 /*search box css start here*/
 .project-sorting-section--search {
-    background: #fff;
+    background: #f9f9f9;
     padding: 10rem 5rem 3rem 5rem;
 }
 
@@ -1293,7 +1284,7 @@ p {
     background-color: #f9cc41;
     border: 1px solid #f9cc41;
     text-transform: capitalize;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     height: calc(3rem + 2px) !important;
     border-radius: 3px;
     margin: 31px 0px;
@@ -1319,8 +1310,8 @@ p {
 }
 /*section-project-filter-list*/
 .section-project-filter-list{
-    padding: 0rem 5rem 5rem 5rem;
-    background-color: #fff;
+    padding:5rem;
+    background-color: #f1f1f1;
 }
 .project-single-item a{
     list-style: none;
@@ -1407,7 +1398,7 @@ span.block-border {
 .project-details--banner h1 {
     color: #262533;
     text-align: left;
-    padding: 130px 225px 130px 122px;
+    padding: 200px 225px 200px 122px;
     font-size: 72px;
     line-height: 85px;
     font-weight: 600;
@@ -1421,10 +1412,6 @@ span.block-border {
     background-color: #f2f2f2;
 }
 
-.skyblue {
-    border: 1px solid #ddd;
-    padding: 20px
-}
 
 .project-details-sldier .carousel-indicators {
     bottom: 15px;
@@ -1590,7 +1577,7 @@ span.block-border {
 
 .section--project-details {
     padding: 5rem 5rem;
-    background-color: #262533;
+    background-color: #f9f9f9;
 
 }
 
@@ -1644,7 +1631,7 @@ span.block-border {
 }
 
 .ripple {
-    background-color: #fff;
+    background-color: #f1f1f1;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -1670,7 +1657,7 @@ span.block-border {
 
 @keyframes ripple {
     0% {
-        box-shadow: 0 0 0 .7rem rgba(255, 255, 255, 0.2)
+        box-shadow: 0 0 0 .7rem rgba(10, 11, 17, 0.2)
     }
 
     100% {
@@ -1709,6 +1696,7 @@ span.block-border {
     width: 100%;
     background-size: cover;
     background-position: center;
+    box-shadow: 6px 6px 0px #f9cc41;
 }
 
 .section--feature-properties nav > .nav.nav-tabs {
@@ -1764,10 +1752,10 @@ span.block-border {
     font-family: 'Oswald', sans-serif;
 }
 .feature-content--box .feature-content__title p{
-        font-size: 24px;
+    font-size: 24px;
     line-height: 42px;
     font-weight: 300;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px 3px ;
     color: #f2f2f2!important;
 }

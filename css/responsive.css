@@ -15,6 +15,9 @@
         background: #f9cc41;
         display: inline-block;
     }
+    .home-slider .carousel-inner{
+        height: 100%;
+    }
 
     .project-sorting-section--search {
         background: #f2f2f2;
@@ -90,6 +93,25 @@
         max-height: 100%;
         max-width: 100%;
     }
+
+    .section--known-more {
+        padding: 5rem 0rem;
+    }
+
+    .section--feature-properties {
+        padding: 5rem 0rem;
+    }
+    .section--feature-properties .tab-content{
+        padding: 1rem 2rem;
+    }
+
+    .social-feed {
+        padding: 5rem 0rem;
+    }
+
+    .section-project-filter-list{
+        padding: 5rem 0rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -144,7 +166,7 @@
     .bolck-gallery img {
         max-height: 400px;
         max-width: 400px;
-        border-radius: 3px;
+        border-radius: 35px;
         border: 1px solid #ddd;
         padding: 10px;
     }
