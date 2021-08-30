@@ -1284,7 +1284,7 @@ p {
     background-color: #f9cc41;
     border: 1px solid #f9cc41;
     text-transform: capitalize;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     height: calc(3rem + 2px) !important;
     border-radius: 3px;
     margin: 31px 0px;
@@ -1760,7 +1760,7 @@ span.block-border {
     color: #f2f2f2!important;
 }
 .feature-btn{
-    color: #262533;
+    color: #fff;
     background-color: #f9cc41 !important;
     font-size: 20px;
     text-transform: uppercase;
@@ -1878,6 +1878,29 @@ span.block-border {
     text-align: center;
     margin-bottom: 5px;
 }
+
+/* news and event */
+
+.news-event--banner {
+    background:linear-gradient(0deg, rgba(255, 250, 253, 0.3), rgba(255, 255, 255, 0.3)),url("../img/bg.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.about-company-section{
+    padding: 5rem;
+}
+
+.icon-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .icon-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: .25rem;
+  }
 
 /*footer*/
 .section--footer {
